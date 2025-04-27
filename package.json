@@ -21,6 +21,7 @@
   "dependencies": {
     "@biconomy/abstractjs": "^1.0.4",
     "@rhinestone/module-sdk": "^0.2.7",
+    "path": "^0.12.7",
     "viem": "^2.28.0"
   }
 }

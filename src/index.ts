@@ -16,7 +16,7 @@ app.use((err: any, req: Request, res: Response, next: Function) => {
 });
 
 app.get('/', (req: Request, res: Response) => {
-    res.send('Hello World');
+    res.sendFile(require('path').join(__dirname, 'public', 'index.html'));
 });
 
 // Start server
