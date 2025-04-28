@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: gasslesstx-backend
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: node dist/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_OPTIONS
+        value: "--max-old-space-size=512"
